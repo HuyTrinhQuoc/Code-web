@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<Style>
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        color: black;
+        font-family: sans-serif, tahoma;
+        height: 100%;
+    }
+
+    #container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+        height: 100%;
+    }
+
+    #container .menu {
+        height: 60px;
+        background-color: #eee;
+        border-bottom: solid darkred 2px;
+        border-left: solid darkred 5px;
+
+    }
+
+    #container .menu ul {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #container .menu ul li {
+        list-style-type: none;
+    }
+
+    #container .menu>ul>li {
+        float: left;
+        width: fit-content;
+        padding: 22px;
+        font-weight: bold;
+    }
+
+    #container .menu ul>li:hover {
+        background-color: darkred;
+        color: white;
+        cursor: pointer;
+    }
+
+    #container .menu>ul>li ul.sub {
+        position: absolute;
+        background-color: #eee;
+        margin-left: -22px;
+        margin-top: 23px;
+        display: none;
+        border-top: 2px solid darkred;
+    }
+
+    #container .menu>ul>li ul.sub li {
+        float: none;
+        color: black;
+        width: auto;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 1px #ccc;
+
+    }
+
+    #container .menu>ul>li ul.sub li:hover {
+        color: white;
+
+    }
+
+    #container .menu ul>li:hover ul.sub {
+        display: block;
+
+    }
+</Style>
+
+<body>
+    <div id="container">
+        <div class="menu">
+            <ul>
+                <li>HOME</li>
+                <li>
+                    <span>PRODUCTS</span>
+                    <ul class="sub">
+                        <li>TIVI</li>
+                        <li>MAY TINH XACH TAY</li>
+                    </ul>
+                </li>
+                <li>ABOUTS US</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
