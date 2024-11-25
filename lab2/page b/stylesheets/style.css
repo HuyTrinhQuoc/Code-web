@@ -1,0 +1,117 @@
+html,
+body {
+    margin: 15px;
+    padding: 0;
+    height: 100%;
+
+}
+
+#section_text_2 .container {
+    display: grid;
+    height: 120px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #F3F3F3;
+}
+
+#section_text_2 .container .columns,
+#section_text_2 .container .columns .pix_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section_text_2 .container .columns .pix_button {
+    border: 1px solid;
+    font-weight: 700;
+    color: white;
+    width: 150px;
+    height: 50px;
+    background-color: #F77825;
+    border-radius: 5px;
+    font-family: sans-serif, tahoma;
+    text-decoration: none;
+}
+
+#section_header_1 .container {
+    display: grid;
+    height: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+}
+
+
+#section_header_1 .bottom-icons>li,
+#section_header_1 .nav>li {
+    float: left;
+    padding-left: 40px;
+    padding-top: 20px;
+    list-style: none;
+    font-size: 20px;
+
+}
+
+#section_header_1 .bottom-icons>li,
+#section_header_1 .nav a {
+    color: #7F7F7F;
+    font-family: sans-serif, tahoma;
+    font-weight: 600;
+
+}
+
+#section_header_1 .bottom-icons>li {
+    padding-left: 20px;
+}
+
+#section_header_1 .nav a {
+    text-decoration: none;
+}
+
+#section_header_1 .container .collapse {
+    padding-left: 215px;
+}
+
+#section_header_1 .container .padding_25 {
+    padding-left: 280px;
+}
+
+
+
+
+#section_slider .container {
+    border: 1px solid;
+    height: 460px;
+    background-color: #eeeeee;
+    position: relative;
+
+}
+
+
+
+
+.carousel-inner>.item>img {
+    position: absolute;
+    background-image: linear-gradient(to top bottom, white 30px);
+    top: 50px;
+    border-radius: 5px;
+    padding-left: 296px;
+    width: 867px;
+    height: 350px;
+    object-fit: cover;
+    /* Đảm bảo hình ảnh không bị méo */
+}
+
+.carousel-inner>.item h3,
+.carousel-inner>.item p {
+    position: absolute;
+    color: white;
+    font-family: sans-serif, tahoma;
+}
+.carousel-inner>.item h3{
+    bottom: 75px;
+    left: 310px;
+}
+.carousel-inner>.item p{
+    bottom: 60px;
+    left: 315px;
+    font-size: small;
+}
